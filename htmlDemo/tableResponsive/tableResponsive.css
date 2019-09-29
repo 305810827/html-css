@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+table{
+    width:90%;
+    margin:0px auto;
+    border: 1px solid #666666;
+    box-shadow: 5px 5px 5px #999999;
+}
+table th, table td{
+    border: 1px solid #666666;
+    padding: 0.5em 1em;
+}
+table th{
+    background-color: green;
+}
+table .action a{
+    text-decoration: none;
+    color: #f30213;
+    padding: 0px 4px;
+}
+table .number,table .action{
+    text-align: center;
+}
+@media (max-width: 600px) {
+    table{
+        border: none;
+        box-shadow: none;
+    }
+    table th{
+        display: none;
+    }
+    table td,table tr{
+        border: none;
+        display: block;
+        position: relative;
+    }
+    table tr{
+        margin-bottom: 1em;
+        box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.2);
+    }
+    table tr .number{
+        background-color: green;
+        text-align: left;
+        padding-left: 28%;
+    }
+    table tr .number::before{
+        content: "课程序号";
+        position: absolute;
+        top: 0.5em;
+        left: 0.5em;
+        font-weight: bold;
+    }
+    table tr .name{
+        text-align: left;
+        padding-left: 28%;
+    }
+    table tr .name::before{
+        content: "课程名称";
+        position: absolute;
+        top: 0.5em;
+        left: 0.5em;
+        font-weight: bold;
+    }
+    table tr .action{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

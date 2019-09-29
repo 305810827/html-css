@@ -1,0 +1,48 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+.menu li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+.menu li:nth-child(1){
+    background-color: #f30213;
+}
+.menu li:nth-child(2){
+    background-color: #999999;
+}
+.menu li:nth-child(3){
+    background-color: #ffb52b;
+}
+.menu li:nth-child(4){
+    background-color: #FD6A7A;
+}
+.menu li:nth-child(5){
+    background-color: green;
+}
+.menu li:nth-child(6){
+    background-color: black;
+}
+@media (min-width: 530px) {
+    .menu li{
+        flex:1 1 50%;
+    }
+}
+@media(min-width: 768px) {
+    .menu{
+        flex-flow: row nowrap;
+    }
+}
+
